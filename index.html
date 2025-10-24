@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maryam</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="brand">
+      <!--<div class="logo">♡</div>-->
+      <div class="title">
+        <h1>My portfolio</h1>
+        <p>For clients and employers </p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <button class="burger" id="burgerBtn">☰</button>
+    <button id="theme-toggle">☀️/🌙</button>
+
+  </header>  <main>
+    <section id="about">
+      <div class="about">
+        <div class="info">
+          <h2>Maryam</h2>
+          <p>A starter software engineer <br>
+            Studying CS at IT$Business College<br>
+            Doing projects and and working in team</p>
+        </div>
+        <div class="photo">
+          <img src="resources/images/my_photo.jpg" alt="Фото" />
+        </div>
+      </div>
+    </section><section id="skills">
+  <h2>Skills</h2>
+<div class="skills-grid">
+  <div class="skill">
+    <img src="resources/icons/html.icon.png" alt="HTML" />
+    <p>HTML</p>
+  </div>
+  <div class="skill">
+    <img src="resources/icons/css.icon.png" alt="CSS" />
+    <p>CSS</p>
+  </div>
+  <div class="skill">
+    <img src="resources/icons/js.icon.png" alt="JavaScript" />
+    <p>JavaScript</p>
+  </div>
+  <div class="skill">
+    <img src="resources/icons/java.icon.png" alt="Java / SpringBoot" />
+    <p>Java / SpringBoot</p>
+  </div>
+  <div class="skill">
+    <img src="resources/icons/python.icon.png" alt="Python" />
+    <p>Python</p>
+  </div>
+  <div class="skill">   
+    <img src="resources/icons/databases.icon.png" alt="Databases" />
+    <p>Databases</p>
+  </div>
+</div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+<div class="services-list">
+  <div class="service">
+    <h3>Веб-разработка</h3>
+    <p>Создание современных, адаптивных сайтов и SPA-приложений.</p>
+  </div>
+
+  <div class="service">
+    <h3>Telegram-боты</h3>
+    <p>Разработка ботов для автоматизации задач, поддержки клиентов и интеграции с сервисами.</p>
+  </div>
+
+  <div class="service">
+    <h3>UI / UX дизайн</h3>
+    <p>Создание минималистичных и удобных интерфейсов, адаптированных под пользователя.</p>
+  </div>
+
+  <div class="service">
+    <h3>Работа с базами данных</h3>
+    <p>Проектирование, настройка и оптимизация баз данных для приложений и сайтов.</p>
+  </div>
+
+  <div class="service">
+    <h3>Приложения</h3>
+    <p>Разработка кроссплатформенных и веб-приложений под различные задачи.</p>
+  </div>
+
+  <div class="service">
+    <h3>Программы для расчётов и автоматизации</h3>
+    <p>Создание инструментов для упрощения рутинных процессов и повышения эффективности работы.</p>
+  </div>
+</div>
+</section>
+
+<section id="contacts">
+  <h2>Contacts</h2>
+  <div class="contacts-container">
+    
+    <!-- Левая часть — иконки соцсетей -->
+    <div class="contacts-list">
+      <div class="contact-item">
+        <img src="resources/icons/whatsapp_icon.png" alt="WhatsApp">
+        <span>+(996)709-370-975</span>
+      </div>
+      <div class="contact-item">
+        <img src="resources/icons/telegram_icon.png" alt="Telegram">
+        <span>@mararrre</span>
+      </div>
+      <div class="contact-item">
+        <img src="resources/icons/linkedin_icon.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </div>
+      <div class="contact-item">
+        <img src="resources/icons/github_icon.png" alt="GitHub">
+        <span>mararrre</span>
+      </div>
+    </div>
+
+    <!-- Правая часть — форма -->
+    <form>
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="text" name="contacts" placeholder="Contacts" required />
+      <textarea name="request" placeholder="Request"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+</section>
+
+
+  </main>  <footer>
+    <p>© <span id="year"></span> Maryam Okumbekova — Portfolio</p>
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <button id="scrollTopBtn">↑</button>
+  <script src="scripts.js"></script>
+</body>
+</html>

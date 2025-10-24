@@ -1,0 +1,541 @@
+/* === Общие стили (Dark Theme + Purple Accent) === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #e6e6e6;
+  background-color: #121212;
+}
+
+/* Контейнеры и отступы */
+main, header, section, footer {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === Хэдер === */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #8b5cf6; /* фиолетовый акцент */
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.title h1 {
+  font-size: 2em;
+  color: #e9e9e9;
+}
+
+.title p {
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  gap: 30px; /* расстояние между пунктами */
+}
+
+nav a {
+  text-decoration: none;
+  color: #c084fc;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #a855f7;
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.7);
+}
+
+/* === О себе === */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.about .info {
+  flex: 1 1 300px;
+  align-items: flex-start;
+}
+
+.about .photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #8b5cf6;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+/* === Навыки === */
+/* === Навыки === */
+#skills {
+  text-align: center;        /* Центрируем заголовок и содержимое */
+  margin-top: 100px;         /* Ещё больше воздуха от предыдущей секции */
+}
+
+#skills h2 {
+  font-size: 2em;
+  color: #c084fc;
+  margin-bottom: 40px;       /* Больше отступ между заголовком и иконками */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;                 /* Расстояние между иконками */
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: #dcdcdc;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.3)); /* мягкое фиолетовое свечение */
+}
+
+.skill p {
+  margin: 0;
+  font-size: 1em;
+  color: #e0e0e0;
+  margin-top: 8px;
+}
+
+.skill:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 20px rgba(192, 132, 252, 0.5);
+}
+
+.skill:hover img {
+  filter: drop-shadow(0 0 12px rgba(192, 132, 252, 0.6)); /* усиливаем свечение при наведении */
+}
+
+
+/* === Услуги === */
+#services {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#services h2 {
+  font-size: 2em;
+  color: #c084fc;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service {
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service h3 {
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #dcdcdc;
+  font-size: 0.95em;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(192, 132, 252, 0.4);
+}
+
+
+/* === Контакты === */
+/* === Контакты === */
+#contacts {
+  text-align: center;
+  margin-top: 100px; /* Отступ от предыдущего блока */
+}
+
+#contacts h2 {
+  font-size: 2em;
+  color: #c084fc;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Блок контактов */
+/* === Контейнер секции === */
+#contacts {
+  margin-top: 100px;
+  color: #eaeaea;
+  text-align: left;
+}
+
+#contacts h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #c084fc;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* === Основная раскладка — соцсети слева, форма справа === */
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* === Левая часть — соцсети === */
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* расстояние между строками */
+  flex: 1 1 250px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #c084fc;
+  font-size: 1.1em;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.contact-item img {
+  width: 28px;
+  height: 28px;
+  /* оставляем оригинальные цвета — без фильтров */
+  transition: transform 0.3s;
+}
+
+.contact-item:hover {
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.7);
+  transform: scale(1.05);
+}
+
+.contact-item:hover img {
+  transform: scale(1.1);
+}
+
+/* === Правая часть — форма === */
+form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 420px;
+}
+
+input,
+textarea {
+  background: #1a1a1a;
+  color: #eaeaea;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.6);
+}
+
+button {
+  background: #8b5cf6;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #7c3aed;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.7);
+  transform: translateY(-2px);
+}
+
+/* === Футер === */
+footer {
+  text-align: center;
+  font-size: 0.95em;
+  color: #aaa;
+  padding: 40px 20px; /* было 20px — стало 40px, добавили вертикальное пространство */
+  border-top: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  margin-top: 60px; /* дополнительный отступ сверху от контента */
+}
+
+/* === Кнопка "вверх" === */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5em;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.7);
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: #c084fc;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+  color: #a855f7;
+}
+
+/* 🌞 Светлая тема — читаемый вариант */
+body.light-theme {
+  background: #fdfdfd;
+  color: #1a1a1a;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Header & Footer */
+body.light-theme header,
+body.light-theme footer {
+  background: #ececec;
+  color: #1a1a1a;
+  border-color: #ccc;
+}
+
+/* Общий текст и карточки */
+body.light-theme .skill,
+body.light-theme .service,
+body.light-theme input,
+body.light-theme textarea {
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Заголовки */
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3 {
+  color: #6d28d9;
+}
+
+/* Навигация */
+body.light-theme nav a {
+  color: #6d28d9;
+}
+body.light-theme nav a:hover {
+  color: #6d28d9;
+}
+
+/* Кнопки */
+body.light-theme button {
+  background: #6d28d9;
+  color: #fff;
+}
+body.light-theme button:hover {
+  background: #6d28d9;
+}
+
+/* Контакты */
+body.light-theme .contact-item span {
+  color: #6d28d9;
+}
+body.light-theme .contact-item img {
+  filter: none;
+}
+
+body.light-theme .skill *,
+body.light-theme .service * {
+  color: #1a1a1a !important; /* чёткий тёмный текст */
+}
+
+/* Чтобы фиолетовые заголовки не потерялись */
+body.light-theme #skills h2,
+body.light-theme #services h2 {
+  color: #6d28d9 !important;
+}
+
+/* === Бургер меню === */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: #c084fc;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #1a1a1a;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+
+
+/* === Адаптивность === */
+@media (max-width: 700px) {
+  header {
+    position: relative;
+    flex-direction: row;        /* остаётся в одну строку */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;            /* разрешаем перенос если нужно */
+  }
+
+  .brand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand h1 {
+    font-size: 1.2em;
+  }
+
+  .burger,
+  #themeToggle {
+    margin-left: 10px;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    position: absolute; top: 100%; right: 0;
+    padding: 5px;
+    background: #2a2a2a;
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 15px; /* меньшее расстояние между текстом и фото */
+  }
+}
+
